@@ -1,0 +1,19 @@
+# 1. API Keys and Secrets (Maximum Security)
+.env
+.streamlit/secrets.toml
+credentials.json
+
+# 2 Python Virtual Environments & Cache
+venv/
+env/
+__pycache__/
+*.pyc
+
+# 3. System Junk Files
+.DS_Store
+Thumbs.db
+
+# 4. Local Drafts and Dummy Data Prep
+drafts/
+private/
+*_local_only.*
