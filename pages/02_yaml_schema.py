@@ -15,7 +15,7 @@ with col1:
   st.caption("A typical messy PDF or Word document from a legacy Quality Manual.")
   st.error("""
 **Acme Aerospace - Audit Finding 2026-A**
-During the morning shift on Tuesday, the inspector noticed that the O-rings, in bin 4A were not stored at the right temperature. The manual says they should be between 65 and 75 degrees but it was 82 degrees in the storage room. Also, the batch number was rubbed off. This violates our preservation policy. We need to move them to the climate-controlled area and tell the supplier.
+During the morning shift on Tuesday, the inspector noticed that the O-rings, in bin 4A were not stored at the right temperature. The manual says they should be between 65 and 75 degrees but it was 82 degrees in the storage room. Also, the batch number was rubbed off. This violates our preservation policy. Quarantine the affected inventory in the climate-controlled sector and initiate a Supplier Corrective Action Request (SCAR) regarding the missing lot traceability.
 """)
   st.markdown("""
 *Why AI fails here:*
@@ -45,8 +45,8 @@ acme_ncr_report:
     actual_temp_recorded_F: 82
     deviation_status: "CRITICAL"
   action_plan:
-    immediate_containment: "Relocate to climate-controlled sector."
-    external_action: "Notify supplier regarding batch labeling."
+    immediate_containment: "Quarantine to climate-controlled sector."
+    external_action: "Initiate SCAR for missing lot traceability."
     """
   st.code(yaml_code, language="yaml")
 
